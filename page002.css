@@ -335,6 +335,14 @@ font-size: 50px;
   } 
 }
 
+@media screen and (max-width: 425px) {
+  .swiper-slide h1{
+    margin-left: 10%;
+    height: 100%;
+    font-size: 0.8em;
+  } 
+}
+
 .swiper-slide p{
 margin-left: 10%;
 height: 100%;
