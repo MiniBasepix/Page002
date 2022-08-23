@@ -205,7 +205,7 @@ margin-top: 50px;
 
 #navi a {
 color: white;
-margin-top: 10px;
+margin-top: 35px;
 }
 
 /* メニュー黒ポチを消す */
@@ -535,6 +535,13 @@ margin: 0 !important;
 .main .img {
   width: 50%;
   margin: 15px;
+}
+
+@media screen and (max-width: 763px) {
+.main .img {
+  width: 100%;
+  margin: 15px 0;
+}
 }
 
 .imgh1 {
