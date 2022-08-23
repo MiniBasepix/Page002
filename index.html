@@ -5,35 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自由研究2022 - トップページ</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@300&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet"> 
     <!-- css,javascript -->
-    <link rel="stylesheet" href="page002.css">
-    <script href="main.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 </head>
 <body>
   
-
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><a href=""><h1>素材による色の消え方の違いは?</h1></a></div>
-      <div class="swiper-slide"><a href="site-design.html"><h1>サイトのデザインを考える</h1></a></div>
-      <div class="swiper-slide"><a href="40-kisyou"><h1>40度以上の暑さを伝える気象用語を考える</h1></a></div>
-    </div>
-    <!-- 必要に応じてナビボタン -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <!-- 必要に応じてページネーション -->
-  <div class="swiper-pagination"></div>
-  </div>
-
   <!-- header -->
   <header id="header">
     <div class="header-inner">
@@ -43,46 +20,72 @@
         <nav id="navi" class="nav_content">
           <ul class="nav_list">
             <li><a href="color.html">素材による色の消え方の違いは?(2022-)</a></li>
-            <li><a href="site-design.html">サイトのデザインを考える(2022)</a></li>
             <li><a href="40-yougo.html">40度以上の暑さを伝える気象用語を考える(2022)</a></li>
+            <li><a href="about.html">自由研究2022について</a></li>
           </ul>
         </nav>
     </div>
   </header>
 
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><h1>素材による色の消え方の違いは?</h1><a href="color.html" class="slider-btn"><span class="btn-text">詳細を見る<div class="arrow arrow-right"></div></span></a></div>
+      <div class="swiper-slide"><h1>猛暑日の上の気象用語を考える</h1><a href="40-yougo.html" class="slider-btn"><span class="btn-text">詳細を見る<div class="arrow arrow-right"></div></span></a></div>
+      <div class="swiper-slide"><h1>自由研究2022について</h1><a href="about.html" class="slider-btn"><span class="btn-text">詳細を見る<div class="arrow arrow-right"></div></span></a></div></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
     <div class="main">
-      <h1 class="color_seince_h1">過去の自由研究</h1><br>
-      <div class="card">
-        <section class="color_seince">
-          <a href="http://minibasepix.github.io/Page001/index.html">
-            <h1>早く消える色は何色?(2021)</h1>
-            <p>2020年4月から始まった「早く消える色」について調べる実験</p>
-            <p>Page001 - index.html</p>
+      <h1 class="card_h1">過去の自由研究</h1>      
+
+        <div class="card">
+          <a href="color2020.html">
+          <div class="image">
+            <img src="image/earth.jpg" width="250" alt="Photo">
+          </div>
+          <div class="text">
+            <h1>一番早く消える色<br class="phone_br">は何色?</h1>
+            <p>2020年3月から始まった<br class="phone_br">「早く消える色」について調べる実験</p>
+          </div>
+          </a>          
+        </div>
+
+        <div class="card">
+          <a href="color2021.html">
+          <div class="image">
+            <img src="image/earth.jpg" width="250" alt="Photo">
+          </div>
+          <div class="text">
+            <h1>色が消える原因</h1>
+            <p>「早く消える色は何色?」の実験結果を<br class="phone_br">もとに、考察する</p>
+          </div>
+          </a>          
+        </div>
+
+        <div class="card">
+          <a href="hand_size.html">
+          <div class="image">
+            <img src="image/hand.jpg" width="250" alt="Photo">
+          </div>
+          <div class="text">
+            <h1>手の大きさの秘密</h1>
+            <p>手の大きさが、<br class="phone_br">体と何か関係あるかを調べる</p>
+          </div>
           </a>
-        </section>
-        <section class="color_seince">
-          <!-- <a href="http://minibasepix.github.io/Page001/jik2"> -->
-            <h1>色の消え方(2021)</h1>
-            <p>2020年4月からの実験から考察する</p>
-            <p>Page001(2021/jik2) - index.html〈公開されていません〉</p>
-          </a>
-        </section>
-        <section class="color_seince">
-          <!-- <a href="http://minibasepix.github.io/Page001/d2019"> -->
-            <h1>手の大きさの秘密(2019)</h1>
-            <p>手の大きさは何と関係するか考える</p>
-            <p>Page001(2019) - index.html〈公開されていません〉</p>
-          </a>
-        </section>
         </div>
     </div>
 
     <footer>
-        <p>Create by Clos Jel.</p>
-        <p><a href="http://minibasepix.github.io/jiyuken/">自由研究top へ行く></a></p>
-      </footer>
+      <p>Create by Clos Jel.</p>
+      <p><a href="index.html">ホームへ戻る></a></p>
+      <small>&copy; Clos Jel 2022</small>
+    </footer>
+
       <!-- slider js (swiper js) -->
-      <script src="swiper-bundle.min.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
       <script>
       const swiper = new Swiper(".swiper", {
         loop: true,

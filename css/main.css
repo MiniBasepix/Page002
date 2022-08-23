@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap');
+
+:lang(ja) h1{
+  font-family: 'Roboto','Noto Sans JP';
+  font-weight: 300;
+}
+
+:lang(en) h1{
+font-family: 'Roboto','Noto Sans JP';
+font-weight: 300;
+}
+
+:lang(en) h3{
+font-family: 'Roboto';
+font-weight: 300;
+}
+
+.red {
+color: red;
+display: inline;
+font-weight: 700;
+padding-left: 10px;
+}
+
+html {
+  font-size: 120%;
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: 'Roboto','Noto Sans JP';
+  font-weight: 300;
+  scrollbar-width: thin;
+  scrollbar-color: gray lightgray;
+}
+
+.main {
+  padding-top: 70px !important;
+}
+
+.main2 {
+  margin: 0 20px !important;
+  
+}
+
+.nomodal {
+z-index: 1;
+}
+
+body {
+color: #1d1d1f;
+margin: 0;
+}
+
+a {
+color: #3d3d3d;
+text-decoration: none;
+}
+img {
+max-width: 100%;
+}
+li {
+list-style: none;
+}
+
+ol li {
+  list-style: inside;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* header style */
+
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  top: 0;
+  text-align: center;
+}
+#header .header-inner {
+  height: 60px;
+  display: flex;
+  padding-right: 10%;
+  padding-left: 2.5%;
+}
+
+#header .header-inner .logo {
+  flex-shrink: 0;
+  line-height: 1px;
+  margin-right: 10%;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+#navi {
+  width: 100%;
+}
+
+#navi ul {
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+@media screen and (min-width: 1750px) {
+  #navi ul {
+    display: flex;
+    text-align: center;
+  }
+}
+
+#navi a {
+  height: 44px;
+  line-height: 24px;
+  display: inline-block;
+  color: black;
+  font-size: 20px;
+  padding: 0 10px;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+#navi a:hover {
+  opacity: 1;
+}
+#drawer_input {
+  display: none !important;
+}
+
+@media screen and (max-width: 1750px) {
+/*hamburger menu*/
+
+.drawer_open {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+right: 20px;
+z-index: 100;/* 重なり順を一番上にする */
+cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+content: '';
+display: block;
+height: 2px;
+width: 25px;
+border-radius: 0.5px;
+background: #333;
+transition: 0.25s;
+position: absolute;
+}
+
+.hamburger {
+margin-top: 30px;
+padding-right: 20px;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+bottom: 0;
+transform: rotate(45deg);
+background: white;
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+top: 0;
+transform: rotate(-45deg);
+background: white;
+}
+
+/* メニューのデザイン*/
+.nav_content {
+width: 100%;
+height: 100%;
+position: fixed;
+bottom: 100%;
+left: 0%; /* メニューを画面の外に飛ばす */
+z-index: 99;
+background: rgba(31, 31, 31, 0.99);
+transition: .5s;
+text-align: center;
+margin-top: 50px;
+}
+
+#navi a {
+color: white;
+margin-top: 10px;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+list-style: none;
+}
+
+.nav_item a {
+color: #fff;
+text-decoration: none;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+bottom: 0;
+}
+}
+
+.topimage h1 {
+  font-family: 'Noto Serif JP';
+  font-size: 75px;
+}
+
+.topimage {
+  background: linear-gradient(to left top,#F4A466,#65acc4);
+  padding: 10%;
+  color: white;
+  font-weight: 500;
+  font-size: 25;
+  
+}
+
+.sub-topimage {
+margin-top: 60px;
+background: linear-gradient(to right top,#65acc4,#649281);
+padding: 2.5% 5%;
+color: white;
+font-weight: 500;
+font-size: 25;
+}
+
+footer {
+  background: linear-gradient(gray,rgb(154, 154, 154));
+  color: white;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 80px;
+  bottom: 0;
+}
+
+footer a {
+  color: white;
+  bottom: 0;
+}
+
+.card_h1 {
+  font-size: 28px;
+  margin-left: 24.5px;
+  margin-top:80px;
+  padding: 0 0 5px 5px;
+  border-left: #1f1f1f 1px solid;
+  border-bottom: #1f1f1f 1px solid;
+}
+
+.card {
+  display: flex;
+  white-space: nowrap;
+  width:80%;
+  text-align: left;
+  margin: auto;
+  padding: 25px;
+  background: linear-gradient(to left top,#1b6ed4,#36c8f5);
+  background: linear-gradient(to left top,#1b67c4,#2a99bb);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.card a {
+  color: white;
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+.card h1 {
+  margin-top: 0;
+}
+
+.card .image {
+  float: left;
+  margin-right: 10px;
+}
+
+#card .text {
+  float: right;
+  width: 100%;
+}
+
+@media screen and (max-width:1030px) {
+  #card {
+    display: block;
+  }
+
+  .card .image {
+    float: none;
+    width: 50%;
+    margin-right: 0px;
+  }
+  
+  #card .text {
+    float: none;
+    width: 80%;
+    margin-left: 0px;
+  }
+
+  .card h1 {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .tablet_br {
+      display: none;
+  }
+}
+
+@media screen and (min-width:654px) {
+  .phone_br {
+      display: none;   
+  }
+}
+
+::selection {
+background: rgb(12, 0, 65);
+color: rgb(255, 236, 70);
+}
+
+::-webkit-scrollbar {
+  background: lightgray;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,#F4A466,#65acc4);
+  border-radius: 10px;
+}
+
+/*swiper*/
+.swiper--wrapper {
+/* wrapperのサイズを調整 */
+width: 100%;
+height: 100%;
+transition-timing-function: linear;
+}
+
+.swiper-slide {
+/* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+color: #ffffff;
+height: auto;
+width: 100%;
+text-align: left;
+padding: 175px 0;
+/* line-height: 350px; */
+text-align: left;
+}
+
+.swiper-slide a {
+  color: white;
+}
+
+.swiper-slide h1{
+margin-left: 10%;
+height: 100%;
+font-size: 35px;
+} 
+
+@media screen and (min-width: 763px) {
+  .swiper-slide h1{
+    margin-left: 10%;
+    height: 100%;
+    font-size: 1.5em;
+  } 
+}
+
+@media screen and (max-width: 763px) {
+  .swiper-slide h1{
+    margin-left: 10%;
+    height: 100%;
+    font-size: 1.2em;
+  } 
+}
+
+@media screen and (max-width: 425px) {
+  .swiper-slide h1{
+    margin-left: 10%;
+    height: 100%;
+    font-size: 1.1em;
+  } 
+}
+
+@media screen and (max-width: 375px) {
+  .swiper-slide h1{
+    margin-left: 10%;
+    height: 100%;
+    font-size: 1em;
+  } 
+}
+
+.swiper-slide p{
+margin-left: 10%;
+height: 100%;
+} 
+
+
+
+.swiper-slide:nth-child(3n + 1) {
+  /* background: linear-gradient(to left bottom,#E2421F,#e26433); */
+  background: url(../image/topslide-3rd.jpg);
+  color: white;
+}
+
+.swiper-slide:nth-child(3n + 2) {
+  background: linear-gradient(to left top,#F4A466,#65acc4);
+  background: url(../image/card-sample.jpg);
+  color: white;
+  }
+
+.swiper-slide:nth-child(3n + 3) {
+  /* background: linear-gradient(to left top,#F4A466,#65acc4); */
+  background: url(../image/topslide-1st.jpg);
+}
+
+
+
+.swiper-pagination-bullets {
+position: static;
+margin-top: 16px;
+} 
+
+.swiper-pagination-bullet {
+width: 30px !important;
+height: 3px !important;
+border-radius: 2px !important;
+margin: 0 0 0 10px !important;
+background: white !important;
+}
+
+.swiper-pagination-bullet:first-child {
+margin: 0 !important;
+}
+
+.swiper-button-next:after,.swiper-button-prev:after {
+  color: black;
+}
+
+.slider-btn {
+  position: relative;
+  margin-left: 10%;
+  width: 145px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.slider-btn .btn-text{
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  z-index: 10;
+  left: 10px;
+}
+
+.swiper-slide a {
+  text-decoration: none;
+}
+
+.btn-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  z-index: -1;
+  transition: .5s;
+  background: rgb(22, 111, 194);
+}
+
+.btn-text:hover{
+  color: rgb(255, 255, 255);
+}
+
+.btn-text:hover:before{
+  width: 100%;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.arrow::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.arrow.arrow-right::before {
+  transform: rotate(45deg);
+}
+
+.main .img {
+  width: 50%;
+  margin: 15px;
+}
+
+.imgh1 {
+  padding: 5px 15px;
+  background: #65acc4;
+  color: white;
+  font-size: 30px;
+}
